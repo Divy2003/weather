@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="results">
+        <div class="app-header">
+            <h1 class="app-title">Weather Dashboard</h1>
+        </div>
+
+        <div class="search-div">
+            <input type="text" id="search" placeholder="Enter city name..." />
+            <button class="btn" onclick="getWeather()"><i class="fas fa-search"></i> Get Weather</button>
+        </div>
+
+        <div id="error-container"></div>
+
+        <div class="temp-div">
+            <div class="weather-icon">
+                <i class="weather-condition-icon"></i>
+            </div>
+            <div class="weather-main">
+                <h1 class="city-name"></h1>
+                <p class="p1"></p>
+            </div>
+            <h1 class="h2"></h1>
+        </div>
+
+        <div class="weather-container">
+            <div class="left-div">
+                <h3 class="panel-title">Weather Details</h3>
+                <div class="weather-info">
+                    <i class="fas fa-compress-alt"></i>
+                    <p class="p4"></p>
+                </div>
+                <div class="weather-info">
+                    <i class="fas fa-cloud"></i>
+                    <p class="p5"></p>
+                </div>
+                <div class="weather-info">
+                    <i class="fas fa-globe-americas"></i>
+                    <p class="p13"></p>
+                </div>
+            </div>
+
+            <div class="right-div">
+                <h3 class="panel-title">Additional Info</h3>
+                <div class="weather-info">
+                    <i class="fas fa-tint"></i>
+                    <p class="p11"></p>
+                </div>
+                <div class="weather-info">
+                    <i class="fas fa-wind"></i>
+                    <p class="p12"></p>
+                </div>
+                <div class="weather-info">
+                    <i class="fas fa-sun"></i>
+                    <p class="p14">Sunrise: </p>
+                </div>
+                <div class="weather-info">
+                    <i class="fas fa-moon"></i>
+                    <p class="p15">Sunset: </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Weather data provided by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
